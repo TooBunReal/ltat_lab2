@@ -1,4 +1,4 @@
-![image](https://github.com/TooBunReal/ltat_lab2/assets/89735990/19fec480-47d3-4685-aa61-391de0a180e0)# ltat_lab2
+# ltat_lab2
 ## Bài 7:
 
 ![image](https://github.com/TooBunReal/ltat_lab2/assets/89735990/2447700a-d407-49d1-b9a2-9b7746d2b5ad)
