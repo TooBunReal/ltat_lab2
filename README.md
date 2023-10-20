@@ -66,6 +66,18 @@
 
 ## Bài 9:
 
+- Để có WebGoat trên loacal thì trong bài này mình sẽ dùng Docker để hosting.
+
+```docker run -it -p 127.0.0.1:8080:8080 -p 127.0.0.1:9090:9090 webgoat/webgoat```
+- Sau khi chạy lệnh trên thì trên docker của bạn đã có container của WebGoat.
+
+![image](https://github.com/TooBunReal/ltat_lab2/assets/89735990/397fb3fc-d1e2-4d27-964d-2a378e6baa1f)
+
+- Để truy cập chúng ta chỉ cần vào đường dẫn ```localhost:8080/WebGoat```
+  
+![image](https://github.com/TooBunReal/ltat_lab2/assets/89735990/15f8338f-240b-46a7-9ad8-512cd9ac77c1)
+
+
 - Đây là một chall về JAVA, đề cho chúng ta một đoạn code có sẵn:
 
 ![image](https://github.com/TooBunReal/ltat_lab2/assets/89735990/9c63ccc9-23a1-4d64-9a7f-76473226e4b2)
