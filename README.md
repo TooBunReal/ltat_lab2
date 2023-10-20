@@ -56,11 +56,13 @@
 
 - Đây là một chall về JAVA, đề cho chúng ta một đoạn code có sẵn:
 
-![image](https://github.com/TooBunReal/ltat_lab2/assets/89735990/8cac9e82-ac3f-426c-968b-4eacca3f44c3)
+![image](https://github.com/TooBunReal/ltat_lab2/assets/89735990/9c63ccc9-23a1-4d64-9a7f-76473226e4b2)
+
 
 - Ở đây chúng ta có một đoạn code đáng chú ý.
  
-![image](https://github.com/TooBunReal/ltat_lab2/assets/89735990/915099c0-b60c-4223-b273-08b355905cd7)
+![image](https://github.com/TooBunReal/ltat_lab2/assets/89735990/0f68e543-f98e-4824-a01a-3e11b7035693)
+
 
 - Class VulnerableTaskHolder sẽ truyền mọi taskAction mà ta truyền vào nó, điều này có nghĩa là chúng ta có thể tận dụng điểm này để truyền một câu lệnh nào đó vào đây.
 - Mình sẽ viết một đoạn code để có thể tạo một token thực hiện lệnh ```ping``` .
@@ -87,11 +89,12 @@ public class Program {
 }
 ```
 
-![image](https://github.com/TooBunReal/ltat_lab2/assets/89735990/91fc6455-a23f-45b7-994d-1fd50eb1d1a4)
+![image](https://github.com/TooBunReal/ltat_lab2/assets/89735990/60b9c880-cbe8-4250-adb7-3744f28119d4)
+
 
 -Đây là Token:
 ```rO0ABXNyADFvcmcuZHVtbXkuaW5zZWN1cmUuZnJhbWV3b3JrLlZ1bG5lcmFibGVUYXNrSG9sZGVyAAAAAAAAAAICAANMABZyZXF1ZXN0ZWRFeGVjdXRpb25UaW1ldAAZTGphdmEvdGltZS9Mb2NhbERhdGVUaW1lO0wACnRhc2tBY3Rpb250ABJMamF2YS9sYW5nL1N0cmluZztMAAh0YXNrTmFtZXEAfgACeHBzcgANamF2YS50aW1lLlNlcpVdhLobIkiyDAAAeHB3DgUAAAfnChQWOB41NIOieHQAE3BpbmcgLW4gNCAxMjcuMC4wLjF0AARwaW5n```
 
+![393904979_776481387524809_6695519617529434868_n](https://github.com/TooBunReal/ltat_lab2/assets/89735990/e46f6d5b-4765-42d1-b78f-2b6d324799b1)
 
-![image](https://github.com/TooBunReal/ltat_lab2/assets/89735990/90a8fa86-b5d6-475a-ae55-8fe69856b9a0)
 
