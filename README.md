@@ -1,37 +1,47 @@
 # ltat_lab2
 ## Bài 7:
 
-![image](https://github.com/TooBunReal/ltat_lab2/assets/89735990/2447700a-d407-49d1-b9a2-9b7746d2b5ad)
+![image](https://github.com/TooBunReal/ltat_lab2/assets/89735990/8ec78c64-6948-45e6-858b-bee4f018de1e)
+
 
 - Mục tiêu của bài này là xóa được user ```carlos``` .
 - Trước hết mình phải login bằng user và pass được cho trước.
 - Sau một hồi scan thì mình tìm được đường dẫn ```/admin``` .
 
-![image](https://github.com/TooBunReal/ltat_lab2/assets/89735990/dd419f75-29bf-43d1-b51a-9f758e2dc25d)
+![image](https://github.com/TooBunReal/ltat_lab2/assets/89735990/c657e443-280e-40c4-8361-f27aafb68927)
+
 
 - Có vẻ mình không thể vào được với người dùng bình thường.
 - Check sơ qua cookie thì mình thấy một cookie có giá trị là ```session``` .
 - Mình sẽ thử bật burpsuite lên để test thử.
 
-![image](https://github.com/TooBunReal/ltat_lab2/assets/89735990/d502bf30-8304-40cb-86d9-9f0b932b65a2)
+![image](https://github.com/TooBunReal/ltat_lab2/assets/89735990/c00d99fd-d043-411b-a24d-d44b345fa787)
+
 
 - Khi gửi req đến ```/admin``` server sẽ kiểm tra biến session của chúng ta, khi mình decode thử thì ra được một đối tượng là user.
 - Điểm đáng chú ý ở đây là giá trị admin của session này đang là 0 ( do biến bool quyết định )
 - Giờ mình chỉ cần chuyển nó về thành 1 và gửi req thì có thể bypass phần này.
 
-  ![image](https://github.com/TooBunReal/ltat_lab2/assets/89735990/932acce0-7e60-4306-9eda-9602885769af)
+  ![image](https://github.com/TooBunReal/ltat_lab2/assets/89735990/40464057-71cf-40b6-8ed0-984193eaf6f7)
+
 
 - Giờ thì khi xóa user ```carlos``` chúng ta cũng sẽ làm tương tự.
 
-![image](https://github.com/TooBunReal/ltat_lab2/assets/89735990/6018c782-e03a-4a65-a71e-21dd2e4ef85c)
+![image](https://github.com/TooBunReal/ltat_lab2/assets/89735990/07f9b6f5-9609-46b2-aab2-94998f341e08)
+
 
 ```session=Tzo0OiJVc2VyIjoyOntzOjg6InVzZXJuYW1lIjtzOjY6IndpZW5lciI7czo1OiJhZG1pbiI7YjoxO30%3d```
 
 ## Bài 8:
 
+![image](https://github.com/TooBunReal/ltat_lab2/assets/89735990/40278edf-59b9-4757-b827-5918f469a98b)
+
+
 - Bài này lúc đầu vào cũng giống bài trước nên mình sẽ vào thẳng phần session.
 
-![image](https://github.com/TooBunReal/ltat_lab2/assets/89735990/1eb9bc4f-1399-4c68-816c-81066b427d44)
+![image](https://github.com/TooBunReal/ltat_lab2/assets/89735990/78681bee-3415-44f3-bf0f-18b6d2670de1)
+
+
 
 ```O:4:"User":2:{s:8:"username";s:6:"wiener";s:12:"access_token";s:32:"f4fb8seskjly3qw37onpt6ujkprn1co7";}```
 
@@ -44,11 +54,13 @@
 ```O:4:"User":2:{s:8:"username";s:13:"administrator";s:12:"access_token";i:0;}```
 - Với Class này, mình đã đổi tên của user và đồng thời ép kiểu dữ liệu của access_token là int với giá trị là 0. Điều này làm cho biến access_token sẽ bị lỗi và trả về giá trị đúng.
 
-![image](https://github.com/TooBunReal/ltat_lab2/assets/89735990/e353703a-36f7-4295-9906-9aace41bb32e)
+![image](https://github.com/TooBunReal/ltat_lab2/assets/89735990/77148656-91ab-4190-a383-3062ad41e0df)
+
 
 - Vậy là mình đã bypass qua phần admin, bây giờ chỉ cần xóa User là solve được bài này.
 
-![image](https://github.com/TooBunReal/ltat_lab2/assets/89735990/e1018c97-39d1-4d8e-bfd8-5ff91227087a)
+![image](https://github.com/TooBunReal/ltat_lab2/assets/89735990/036cf3aa-e73e-4fa5-9418-85bcf3159af4)
+
 
 ```session=Tzo0OiJVc2VyIjoyOntzOjg6InVzZXJuYW1lIjtzOjEzOiJhZG1pbmlzdHJhdG9yIjtzOjEyOiJhY2Nlc3NfdG9rZW4iO2k6MDt9```
 
