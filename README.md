@@ -77,6 +77,10 @@
   
 ![image](https://github.com/TooBunReal/ltat_lab2/assets/89735990/15f8338f-240b-46a7-9ad8-512cd9ac77c1)
 
+- Sau khi login thì ta sẽ tới đường dẫn ```http://localhost:8080/WebGoat/start.mvc#lesson/InsecureDeserialization.lesson/4``` để có thể thực hiện thử thách.
+
+![image](https://github.com/TooBunReal/ltat_lab2/assets/89735990/3ea26a36-206d-4144-9255-cedbb77532c6)
+
 
 - Đây là một chall về JAVA, đề cho chúng ta một đoạn code có sẵn:
 
